@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server"
-import { PrismaClient } from "@/lib/generated/prisma"  // 修改这一行
+import { prisma } from "@/lib/db"
 import { headers } from "next/headers"
-
-const prisma = new PrismaClient()
 
 // 简单的API密钥验证（在实际应用中应使用更安全的身份验证方式）
 const API_KEY = process.env.ADMIN_API_KEY || "secret-api-key"

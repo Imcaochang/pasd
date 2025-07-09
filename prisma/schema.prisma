@@ -6,7 +6,8 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../lib/generated/prisma"
+  // 删除或注释掉自定义输出路径
+  // output   = "../lib/generated/prisma"
 }
 
 datasource db {
