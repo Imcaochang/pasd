@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { PrismaClient } from "@prisma/client"
+import { PrismaClient } from "@/lib/generated/prisma"  // 修改这一行
 import { headers } from "next/headers"
 
 const prisma = new PrismaClient()
